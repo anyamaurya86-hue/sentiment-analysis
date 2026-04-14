@@ -10,8 +10,8 @@ st.set_page_config(
 
 @st.cache_resource
 def load_models():
-    model = joblib.load('../emotion_model.pkl')
-    vectorizer = joblib.load('../tfidf_vectorizer.pkl')
+    model = joblib.load('emotion_model.pkl')
+    vectorizer = joblib.load('tfidf_vectorizer.pkl')
     return model, vectorizer
 
 try:
